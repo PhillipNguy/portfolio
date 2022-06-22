@@ -1,0 +1,42 @@
+.App {
+  width: 100vw;
+  height: 8000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  /* background-color: #0a192f; */
+}
+
+.topBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100vw;
+  padding: 3rem;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.link {
+  text-decoration: none;
+  display: inline;
+  padding: 20px 20px;
+  font-size: large;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#night .link {
+  color: white;
+}
+
+.section {
+  margin: 30px;
+  padding: 50px;
+  height: 700px;
+  width: 100vw;
+}
