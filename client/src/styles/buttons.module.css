@@ -1,4 +1,15 @@
-mainButton {
-  background-color: aqua;
-  color: red;
+#night.mainButton {
+  background-color: #0a1930;
+  color: #6af9e2;
+  border-color: #6af9e2;
+  border-width: 5px;
+  border-radius: 8px;
+  border-style: solid;
+
+  width: 140px;
+  height: 55px;
+  margin-right: 20px;
+
+  font-size: x-large;
+  font-weight: bold;
 }

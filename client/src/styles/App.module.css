@@ -1,18 +1,20 @@
 .App {
-  width: 100vw;
+  width: 100%;
+  margin: 0;
   height: 8000px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  /* background-color: #0a192f; */
+
+  overflow-x: hidden;
 }
 
 .topBar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 100vw;
+  width: 100%;
   padding: 3rem;
 }
 
@@ -25,13 +27,17 @@
   text-decoration: none;
   display: inline;
   padding: 20px 20px;
-  font-size: large;
+  font-size: x-large;
   font-weight: bold;
   cursor: pointer;
 }
 
-#night .link {
+#night.link {
   color: white;
+}
+
+#night.highlight {
+  color: #fe29e7;
 }
 
 .section {
