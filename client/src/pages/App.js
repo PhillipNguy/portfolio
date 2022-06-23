@@ -1,4 +1,4 @@
-import styles from '../styles/App.module.css';
+import '../styles/App.css';
 import '../styles/globals.css';
 import { createContext, useState } from 'react';
 import { useRef } from 'react';
@@ -22,19 +22,19 @@ function App() {
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
-      <div className={styles.App} id={theme}>
+      <div className='App' id={theme}>
         <NavBar ref={{ toBe, toLove, toWork, toContact }} />
         <ThemeSwitch />
-        <div className={styles.section} ref={toBe}>
+        <div className='section' ref={toBe}>
           toBe
         </div>
-        <div className={styles.section} ref={toLove}>
+        <div className='section' ref={toLove}>
           toLove
         </div>
-        <div className={styles.section} ref={toWork}>
+        <div className='section' ref={toWork}>
           toWork
         </div>
-        <div className={styles.section} ref={toContact}>
+        <div className='section' ref={toContact}>
           toContact
         </div>
       </div>

@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import styles from '../styles/App.module.css';
+import '../styles/App.css';
 import stylesBtn from '../styles/buttons.module.css';
 import { ThemeContext } from '../pages/App';
 
@@ -13,33 +13,20 @@ const NavBar = React.forwardRef((props, ref) => {
   };
 
   return (
-    <div className={styles.topBar}>
+    <div className='topBar'>
       <h1>Logo Here</h1>
-      <nav className={styles.navBar}>
+      <nav className='navBar'>
         <ul>
-          <li
-            onClick={() => scrollToSection(ref.toBe)}
-            className={styles.link}
-            id={styles[context.theme]}
-          >
+          <li onClick={() => scrollToSection(ref.toBe)} className='link'>
             .toBe()
           </li>
-          <li
-            onClick={() => scrollToSection(ref.toLove)}
-            className={styles.link}
-          >
+          <li onClick={() => scrollToSection(ref.toLove)} className='link'>
             .toLove()
           </li>
-          <li
-            onClick={() => scrollToSection(ref.toWork)}
-            className={styles.link}
-          >
+          <li onClick={() => scrollToSection(ref.toWork)} className='link'>
             .toWork()
           </li>
-          <li
-            onClick={() => scrollToSection(ref.toContact)}
-            className={styles.link}
-          >
+          <li onClick={() => scrollToSection(ref.toContact)} className='link'>
             .toContact()
           </li>
         </ul>
