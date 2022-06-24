@@ -6,8 +6,6 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-
-  overflow-x: hidden;
 }
 
 .topBar {
@@ -18,9 +16,17 @@
   padding: 3rem;
 }
 
+.logo {
+  color: #ffff;
+  margin: 8px;
+  margin-left: 40px;
+  font-size: xx-large;
+}
+
 .navBar {
   display: flex;
   justify-content: space-evenly;
+  padding: 20px;
 }
 
 .link {

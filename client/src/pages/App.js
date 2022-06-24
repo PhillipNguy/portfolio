@@ -24,7 +24,7 @@ function App() {
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <div className={styles.App} id={theme}>
         <NavBar ref={{ toBe, toLove, toWork, toContact }} />
-        <ThemeSwitch />
+        {/* <ThemeSwitch /> */}
         <div className={styles.section} ref={toBe}>
           toBe
         </div>
