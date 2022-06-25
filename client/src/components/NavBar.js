@@ -9,7 +9,7 @@ const NavBar = React.forwardRef((props, ref) => {
 
   return (
     <div className={styles.topBar}>
-      <h1 className={styles.logo}>Phillip Nguy</h1>
+      <img src={require('../assets/logo.png')} className={styles.logo}/>
       <nav className={styles.navBar}>
         <NavLink ref={ref.toBe} refId='toBe' />
         <NavLink ref={ref.toLove} refId='toLove' />

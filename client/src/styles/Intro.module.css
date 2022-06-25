@@ -36,3 +36,11 @@
 
   width: 40%;
 }
+
+.halfLogo {
+  position: absolute;
+  right: 0px;
+  top: 400px;
+  height: 600px;
+  width: auto;
+}

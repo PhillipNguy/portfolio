@@ -17,10 +17,10 @@
 }
 
 .logo {
-  color: #ffff;
-  margin: 30px;
-  margin-left: 100px;
-  font-size: xx-large;
+  margin: 10px;
+  margin-left: 50px;
+  width:100px;
+  height:100px;
 }
 
 .navBar {

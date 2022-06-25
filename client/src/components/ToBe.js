@@ -41,6 +41,8 @@ const ToBe = () => {
           <li>SQL & NoSQL</li>
         </ul>
       </div>
+      <div className={styles.pictureFrame}/>
+      <img src={require('../assets/portrait.jpeg')} className={styles.portrait}/>
     </div>
   );
 };
