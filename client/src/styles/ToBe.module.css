@@ -1,0 +1,49 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin: 30px;
+  padding: 50px;
+  height: 700px;
+  width: 90vw;
+  row-gap: 25px;
+}
+
+.headingBox {
+  display: flex;
+  flex-direction: row;
+}
+
+.hr {
+  width: 500px;
+  height: 2px;
+  text-align: left;
+  margin-left: 10px;
+  margin-top: 30px;
+  background-color: #ffff;
+}
+
+.subHeading {
+  color: #ffff;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.bioBox {
+  width: 50%;
+  color: #8392a9;
+  font-size: 22px;
+  text-align: left;
+}
+
+.skillBox {
+  display: flex;
+  flex-direction: row;
+  column-gap: 70px;
+  margin-left: 20px;
+  font-size: 22px;
+  color: #6AF9E2;
+  text-align: left;
+}
+
+

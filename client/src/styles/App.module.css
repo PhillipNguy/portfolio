@@ -19,7 +19,7 @@
 .logo {
   color: #ffff;
   margin: 30px;
-  margin-left: 40px;
+  margin-left: 100px;
   font-size: xx-large;
 }
 
@@ -27,13 +27,14 @@
   display: flex;
   justify-content: space-evenly;
   padding: 20px;
+  margin-right: 20px;
 }
 
 .link {
   text-decoration: none;
   display: inline;
   padding: 20px 20px;
-  font-size: x-large;
+  font-size: 25px;
   font-weight: bold;
   cursor: pointer;
 }
@@ -47,8 +48,22 @@
 }
 
 .section {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
   margin: 30px;
   padding: 50px;
   height: 700px;
-  width: 100vw;
+  width: 90vw;
+}
+
+#night.highlight.sectionHighlight {
+  font-size: 45px;
+  font-weight: bolder;
+}
+
+#night.sectionMain {
+  font-size: 45px;
+  font-weight: bolder;
+  color: #ffff;
 }

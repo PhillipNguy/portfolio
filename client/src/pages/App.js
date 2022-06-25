@@ -2,8 +2,12 @@ import styles from '../styles/App.module.css';
 import '../styles/global.css';
 import { createContext, useState } from 'react';
 import { useRef } from 'react';
-
 import NavBar from '../components/NavBar';
+import Intro from '../components/Intro';
+import ToBe from '../components/ToBe.js';
+import ToLove from '../components/ToLove';
+import ToWork from '../components/ToWork';
+import ToContact from '../components/toContact';
 import ThemeSwitch from '../components/ThemeSwitch';
 
 export const ThemeContext = createContext(null);
@@ -25,17 +29,18 @@ function App() {
       <div className={styles.App} id={theme}>
         <NavBar ref={{ toBe, toLove, toWork, toContact }} />
         {/* <ThemeSwitch /> */}
-        <div className={styles.section} ref={toBe}>
-          toBe
+        <Intro />
+        <div ref={toBe}>
+          <ToBe />
         </div>
-        <div className={styles.section} ref={toLove}>
-          toLove
+        <div ref={toLove}>
+          <ToLove />
         </div>
-        <div className={styles.section} ref={toWork}>
-          toWork
+        <div ref={toWork}>
+          <ToWork />
         </div>
-        <div className={styles.section} ref={toContact}>
-          toContact
+        <div ref={toContact}>
+          <ToContact />
         </div>
       </div>
     </ThemeContext.Provider>
