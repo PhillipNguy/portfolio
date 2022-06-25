@@ -13,7 +13,7 @@ const NavBar = React.forwardRef((props, ref) => {
       <nav className={styles.navBar}>
         <NavLink ref={ref.toBe} refId='toBe' />
         <NavLink ref={ref.toLove} refId='toLove' />
-        <NavLink ref={ref.toBe} refId='toWork' />
+        <NavLink ref={ref.toWork} refId='toWork' />
         <NavLink ref={ref.toContact} refId='toContact' />
         <button className={stylesBtn.mainButton} id={stylesBtn[theme]}>
           Resume
