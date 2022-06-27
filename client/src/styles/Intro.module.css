@@ -44,3 +44,14 @@
   height: 600px;
   width: auto;
 }
+
+@media all and (max-width: 500px) {
+  .Intro {
+    margin: 10px 30px;
+  }
+
+  .halfLogo {
+    height: 300px;
+    width: auto;
+  }
+}

@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import styles from '../styles/App.module.css';
 import stylesBtn from '../styles/buttons.module.css';
 import { ThemeContext } from '../pages/App';
@@ -6,6 +6,23 @@ import NavLink from './NavLink.js';
 
 const NavBar = React.forwardRef((props, ref) => {
   const { theme } = useContext(ThemeContext);
+  const [button, setButton] = useState(true);
+  const [click, setClick] = useState(false);
+
+  const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false)
+
+  const showButton = () => {
+    if(window.innerWidth <= 960) {
+      setButton(false);
+    } else {
+      setButton(true);
+    }
+  };
+
+  window.addEventListener('resize', showButton);
+
+
 
   return (
     <div className={styles.topBar}>
@@ -13,11 +30,12 @@ const NavBar = React.forwardRef((props, ref) => {
       <nav className={styles.navBar}>
         <NavLink ref={ref.toBe} refId='toBe' />
         <NavLink ref={ref.toLove} refId='toLove' />
-        <NavLink ref={ref.toWork} refId='toWork' />
+        <NavLink ref={ref.toWorkd} refId='toWork' />
         <NavLink ref={ref.toContact} refId='toContact' />
         <button className={stylesBtn.mainButton} id={stylesBtn[theme]}>
           Resume
         </button>
+        {button && <button>Sign UP</button> }
       </nav>
     </div>
   );

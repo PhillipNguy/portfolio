@@ -33,7 +33,7 @@ const Intro = () => {
           Contact Me!
         </button>
       </div>
-      <img src={require('../assets/halfLogo.png')} className={styles.halfLogo} />
+      {/* <img src={require('../assets/halfLogo.png')} className={styles.halfLogo} /> */}
     </div>
   );
 };

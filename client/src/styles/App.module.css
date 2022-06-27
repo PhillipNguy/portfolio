@@ -54,7 +54,7 @@
   margin: 30px;
   padding: 50px;
   height: 700px;
-  width: 90vw;
+  width: 80%;
 }
 
 #night.highlight.sectionHighlight {
@@ -66,4 +66,8 @@
   font-size: 45px;
   font-weight: bolder;
   color: #ffff;
+}
+
+@media all and (max-width: 500px) {
+
 }

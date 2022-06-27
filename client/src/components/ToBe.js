@@ -8,7 +8,7 @@ const ToBe = () => {
     <div className={styles.section}>
       <div className={styles.headingBox}>
         <ToSection type='toBe' />
-        <hr className={styles.hr} />
+        {/* <hr className={styles.hr} /> */}
       </div>
       <h2 className={styles.subHeading}>ようこそ! (Welcome!)</h2>
       <p className={styles.bioBox}>
@@ -42,7 +42,7 @@ const ToBe = () => {
         </ul>
       </div>
       <div className={styles.pictureFrame}/>
-      <img src={require('../assets/portrait.jpeg')} className={styles.portrait}/>
+      {/* <img src={require('../assets/portrait.jpeg')} className={styles.portrait}/> */}
     </div>
   );
 };
