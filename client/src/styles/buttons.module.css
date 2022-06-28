@@ -2,24 +2,44 @@
   background-color: #0a1930;
   color: #6af9e2;
   border-color: #6af9e2;
-  border-width: 5px;
-  border-radius: 8px;
+  border-width: 3px;
+  border-radius: 6px;
   border-style: solid;
 
-  width: 140px;
-  height: 55px;
+  width: 100px;
+  height: 40px;
   margin-right: 20px;
   margin-top: 10px;
   margin-left: 35px;
 
-  font-size: x-large;
+  font-size: 16px;
   font-weight: bold;
+
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
 }
 
 #night.mainButton.contact {
   color: #fe29e7;
   border-color: #fe29e7;
-  width: 200px;
+  width: 130px;
   margin-left: 0px;
   margin-top: 30px;
+
+
+
+}
+
+#night.mainButton:hover {
+  transition: all 0.2s ease-in-out;
+  background: rgb(106, 249, 226, .3);
+  color: #fff;
+  /* opacity: .1; */
+}
+
+#night.mainButton.contact:hover {
+  transition: all 0.2s ease-in-out;
+  background: rgb(254, 41, 231, .3);
+  color: #ffff;
 }

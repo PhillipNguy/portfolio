@@ -2,29 +2,38 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 20px 100px;
+  margin: 0px auto;
+  max-width: 1000px;
 
   row-gap: 5px;
 }
 
 .JapPhrase {
   color: #6af9e2;
+  text-align: left;
+  font-size: 22px;
+  font-weight: bold;
 }
 
 .Name {
   color: #ffff;
-  font-size: 90px;
+  font-size: clamp(50px, 10vw, 90px);
+  font-weight: bold;
+  text-align: left;
+
 }
+
 
 .SubHead {
   color: #8692b0;
-  font-size: 50px;
+  font-size: clamp(40px, 8vw, 80px);
+  font-weight: bold;
   text-align: left;
 }
 
 .Paragraph {
   color: #8692b0;
-  font-size: 26px;
+  font-size: 20px;
   text-align: left;
   margin: 20px 0px;
 }
@@ -34,7 +43,7 @@
   flex-direction: column;
   align-items: flex-start;
 
-  width: 40%;
+  width: 80%;
 }
 
 .halfLogo {
@@ -45,13 +54,22 @@
   width: auto;
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 760px) {
   .Intro {
     margin: 10px 30px;
   }
 
+  .Name {
+    font-size: 60px;
+  }
+
+  .SubHead {
+    font-size: 40px;
+  }
+}
+
+@media all and (max-width: 1200px) {
   .halfLogo {
-    height: 300px;
-    width: auto;
+    display: none;
   }
 }

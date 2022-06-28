@@ -8,6 +8,11 @@
   text-align: center;
 }
 
+.MainBody {
+  max-width: clamp(100px, 80vw, 1000px);
+  margin-top: 100px;
+}
+
 .topBar {
   display: flex;
   flex-direction: row;
@@ -18,29 +23,30 @@
 
 .logo {
   margin: 10px;
-  margin-left: 50px;
-  width:100px;
-  height:100px;
+  /* margin-left: 10px; */
+  width:50px;
+  height:50px;
 }
 
 .navBar {
   display: flex;
   justify-content: space-evenly;
-  padding: 20px;
+  padding: 5px;
   margin-right: 20px;
 }
 
 .link {
   text-decoration: none;
   display: inline;
-  padding: 20px 20px;
-  font-size: 25px;
+  margin-top: 20px;
+  margin-left: clamp(10px, 1.5vw, 50px);
+  font-size: 13px;
   font-weight: bold;
   cursor: pointer;
 }
 
 #night.link {
-  color: white;
+  color: #ffff;
 }
 
 #night.highlight {
@@ -51,10 +57,10 @@
   display: flex;
   flex-direction: column;
   align-items: start;
-  margin: 30px;
-  padding: 50px;
+  /* margin: 30px;
+  padding: 50px; */
   height: 700px;
-  width: 80%;
+  /* width: 80%; */
 }
 
 #night.highlight.sectionHighlight {
@@ -70,4 +76,7 @@
 
 @media all and (max-width: 500px) {
 
+}
+
+@media all and (max-width: 1050px) {
 }

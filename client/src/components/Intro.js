@@ -13,7 +13,7 @@ const Intro = () => {
           こんにちは はじめまして! (Hello, Nice to meet you! )
         </h3>
         <h1 className={styles.Name}>Phillip Nguy</h1>
-        <h2 className={styles.SubHead}>Developer, Traveler, & Cinematographer</h2>
+        <h2 className={styles.SubHead}>Developer, Traveler,<br/> & Cinematographer</h2>
         <div className={styles.bodyBox}>
           <p className={styles.Paragraph}>
             I’m a traveling software engineer that is based in California, but
@@ -33,7 +33,7 @@ const Intro = () => {
           Contact Me!
         </button>
       </div>
-      {/* <img src={require('../assets/halfLogo.png')} className={styles.halfLogo} /> */}
+      <img src={require('../assets/halfLogo.png')} className={styles.halfLogo} />
     </div>
   );
 };
