@@ -64,7 +64,7 @@ const NavBar = React.forwardRef((props, ref) => {
         </button>
       </motion.nav> */}
 
-      <NavMenu className={click ? [styles.navMenu, styles.active].join(' ') : styles.navBar}>
+      <NavMenu className={click ? [styles.navMenu, styles.active].join(' ') : styles.navMenu}>
         <NavLink ref={ref.toBe} refId='toBe' closeMobile={closeMobileMenu} />
         <NavLink ref={ref.toLove} refId='toLove' closeMobile={closeMobileMenu} />
         <NavLink ref={ref.toWork} refId='toWork' closeMobile={closeMobileMenu} />
