@@ -10,7 +10,7 @@
 
 .MainBody {
   max-width: clamp(100px, 80vw, 1000px);
-  margin-top: 100px;
+  margin-top: 200px;
 }
 
 .topBar {
@@ -22,7 +22,9 @@
 }
 
 .logo {
-  margin: 10px;
+  position: relative;
+  top: 50px;
+  left: 50px;
   /* margin-left: 10px; */
   width:50px;
   height:50px;
@@ -33,6 +35,7 @@
   justify-content: space-evenly;
   padding: 5px;
   margin-right: 20px;
+  margin-top: 40px;
 }
 
 .link {
@@ -74,7 +77,26 @@
   color: #ffff;
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 768px) {
+
+  .navMenu {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .navMenu.active {
+    display: inline;
+    background-color: #112240;
+    right: 0;
+    opacity: 1;
+    transition: all 0.6s ease;
+    z-index: 1;
+  }
 
 }
 

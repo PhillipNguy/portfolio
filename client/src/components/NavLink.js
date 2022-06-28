@@ -4,10 +4,10 @@ import { ThemeContext } from '../pages/App';
 import HighlightPhrase from './HighlightPhrase.js';
 
 const NavLink = React.forwardRef((props, ref) => {
-  const { refId } = props;
+  const { refId, closeMobile } = props;
   const { theme } = useContext(ThemeContext);
   const scrollToSection = (elementRef) => {
-    console.log(ref);
+    closeMobile();
     window.scrollTo({
       top: elementRef.current.offsetTop,
       behavior: 'smooth',
