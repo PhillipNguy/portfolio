@@ -7,7 +7,6 @@ const ToWork = () => {
     <div className={styles.section}>
       <div className={styles.headingBox}>
         <ToSection type='toWork' />
-        <hr classmae={styles.hr}/>
       </div>
     </div>
   )

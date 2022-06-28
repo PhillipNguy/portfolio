@@ -7,7 +7,6 @@ const ToContact = () => {
     <div className={styles.section}>
       <div className={styles.headingBox}>
         <ToSection type='toContact' />
-        <hr classmae={styles.hr}/>
       </div>
     </div>
   )

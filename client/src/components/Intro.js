@@ -19,8 +19,7 @@ const Intro = () => {
             I’m a traveling software engineer that is based in California, but
             will often work remotely from Vietnam, Japan, and anywhere else that
             life may take me.
-          </p>
-          <p className={styles.Paragraph}>
+            <br/> <br/>
             Freedom and creativity reigns supreme, and I intend on using it to
             build innovative products that could provide a more sustainable
             future!

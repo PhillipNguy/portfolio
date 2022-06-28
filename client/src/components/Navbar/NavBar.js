@@ -54,7 +54,11 @@ const NavBar = React.forwardRef((props, ref) => {
 
       {click ? <X onClick={handleClick}/> : <Bars onClick={handleClick}/>}
 
-      {/* <motion.nav animate = {click ? 'open' : 'closed'} variants={variants} transition={{duration: 0.3}}>
+      {/* <motion.nav
+      animate = {click ? 'open' : 'closed'}
+      variants={variants}
+      transition={{duration: 0.3}}
+      >
         <NavLink ref={ref.toBe} refId='toBe' closeMobile={closeMobileMenu} />
         <NavLink ref={ref.toLove} refId='toLove' closeMobile={closeMobileMenu} />
         <NavLink ref={ref.toWork} refId='toWork' closeMobile={closeMobileMenu} />
@@ -69,9 +73,15 @@ const NavBar = React.forwardRef((props, ref) => {
         <NavLink ref={ref.toLove} refId='toLove' closeMobile={closeMobileMenu} />
         <NavLink ref={ref.toWork} refId='toWork' closeMobile={closeMobileMenu} />
         <NavLink ref={ref.toContact} refId='toContact' closeMobile={closeMobileMenu} />
-        <button className={stylesBtn.mainButton} id={stylesBtn[theme]}>
+        <motion.button
+        className={stylesBtn.mainButton}
+        id={stylesBtn[theme]}
+        whileHover={{ scale: 1.4 }}
+        whileTap={{ scale: 0.1 }}
+        transition={{ type: 'tween', duration: 0.1 }}
+        >
           Resume
-        </button>
+        </motion.button>
       </NavMenu>
     </Nav>
   );
